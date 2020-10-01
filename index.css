@@ -10,10 +10,13 @@ body {
 .container {
   max-width: 100%;
   height: 100vh;
-  background-color: #00cdde;
+}
+
+.container-box {
+  max-width: 100%;
+  height: 100%;
   display: flex;
   box-sizing: border-box;
-  padding: 12px;
   overflow: hidden;
 }
 
@@ -34,6 +37,10 @@ body {
   position: relative;
 }
 
+.swiper-slide {
+  flex-shrink: 1;
+}
+
 .nav-menu {
   display: flex;
   justify-content: space-between;
@@ -50,6 +57,7 @@ body {
 }
 
 .nav-menu-item {
+  z-index: 2000;
 }
 
 .nav-menu-item ul {
@@ -82,11 +90,11 @@ body {
 }
 
 .red-point {
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
   position: absolute;
   bottom: -18px;
-  right: -3px;
+  right: -5px;
   display: flex;
   opacity: 0;
   align-items: center;
@@ -101,8 +109,8 @@ body {
 }
 
 .red-point div {
-  width: 10px;
-  height: 10px;
+  width: 13px;
+  height: 13px;
   background-color: #fe5803;
   border-radius: 50%;
 }
@@ -154,11 +162,61 @@ body {
 .slider h1 span {
   color: #f24444;
 }
+.next-block.red {
+  background-color: #f24444;
+}
+
+.red-point.blue {
+  background-color: transparent;
+}
+
+.red-point.blue div {
+  background-color: #00cdde;
+}
+
+.slider-text.blue h1 span {
+  color: #0044fb;
+}
+
+.slider-text.blue h1 {
+  margin-top: 65px;
+}
+
+.animation1.blue {
+  top: 0%;
+  width: 600px;
+  max-width: 100%;
+  z-index: 200;
+  position: absolute;
+  left: 46%;
+  transform: translate(7%, -46%);
+}
+
+.animation2.blue {
+  top: 0%;
+  width: 600px;
+  max-width: 100%;
+  z-index: 100;
+  position: absolute;
+  left: 85%;
+  transform: translate(-17%, -73%);
+}
 
 .slider-text {
   display: flex;
   flex-direction: column;
   margin-left: 74px;
+}
+.line-block.blue {
+  background-color: #0044fb;
+}
+
+.slider-box.red {
+  background-color: #f24444;
+}
+
+.delta.blue::after {
+  border-top: 10px solid #00cdde;
 }
 
 .line-block {
@@ -170,10 +228,14 @@ body {
 .save-all {
   color: #ffffff;
   font-family: "Montserrat - Bold";
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 28px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
   margin-top: 10px;
+}
+
+.save-all.blue span {
+  color: #0044fb;
 }
 
 .container-link a {
@@ -244,5 +306,8 @@ body {
   transform: translate(-11%, 44%);
 }
 
-.slider-img img {
+.swiper-pagination {
+  bottom: 2%;
+  left: 49%;
+  transform: translate(-50%, -50%);
 }
