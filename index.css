@@ -207,23 +207,22 @@ body {
 }
 
 .animation1.blue {
-  top: 0%;
-  width: 600px;
+  top: -53%;
+  width: 500px;
   max-width: 100%;
   z-index: 200;
   position: absolute;
-  left: 46%;
-  transform: translate(7%, -46%);
+  left: 57%
 }
 
 .animation2.blue {
-  top: 0%;
+  top: -80%;
   width: 600px;
   max-width: 100%;
   z-index: 100;
   position: absolute;
-  left: 85%;  
-  transform: translate(-17%, -73%);
+  left: 74%;
+
 }
 
 .slider-text {
