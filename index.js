@@ -1,6 +1,6 @@
-const swiper = new Swiper(".swiper-container", {
+const swiper = new Swiper('.swiper-container', {
   pagination: {
-    el: ".swiper-pagination",
-    dynamicBullets: true,
+    el: '.swiper-pagination',
+    clickable: true,
   },
 });
