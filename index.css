@@ -71,24 +71,22 @@ body {
 
 .nav-menu-item ul li {
   position: relative;
-}
-
-.nav-menu-item ul li:nth-child(odd) {
-  margin: 0 49px;
+  width: 95px;
 }
 
 .nav-menu-item ul li:last-child {
-  margin-right: 0;
+  margin-right: 10px;
 }
 
 .nav-menu-item ul li a {
   color: #ffffff;
   text-decoration: none;
   font-family: system-ui;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 400;
   letter-spacing: 0.42px;
   line-height: 10.1px;
+  padding: 10px 15px 10px 15px;
 }
 
 .red-point {
@@ -96,7 +94,7 @@ body {
   height: 20px;
   position: absolute;
   bottom: -18px;
-  right: -5px;
+  right: -10px;
   display: flex;
   opacity: 0;
   align-items: center;
@@ -105,9 +103,17 @@ body {
   background-color: #00cdde;
 }
 
+.red-point.first {
+  right: 10px;
+}
+
+.red-point.last {
+  right: -19px;
+}
+
 .nav-menu-item ul li:hover .red-point {
   opacity: 1;
-  transition: all 0.7s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 .red-point div {
@@ -119,11 +125,11 @@ body {
 
 .nav-menu-item ul li a:hover {
   text-transform: uppercase;
-  padding: 10px 15px 10px 15px;
+  /* padding: 10px 15px 10px 15px; */
   font-family: "Source Code Pro - Regular";
-  font-size: 16px;
-  border: 4px solid #ffffff;
-  transition: border, 0.6s ease-in-out;
+  font-weight: 600;
+  border: 3px solid #ffffff;
+  transition: border, 0.4s ease-in-out;
 }
 
 .next-block {
@@ -176,15 +182,6 @@ body {
   background-color: transparent;
 }
 
-.animation1.blue.slide3 {
-  transform: translate(58%, -60%);
-  width: 500px;
-}
-
-.animation2.blue.slide3 {
-  transform: translate(-23%, -67%);
-}
-
 .red-point.blue div {
   background-color: #00cdde;
 }
@@ -212,7 +209,7 @@ body {
   max-width: 100%;
   z-index: 200;
   position: absolute;
-  left: 57%
+  left: 57%;
 }
 
 .animation2.blue {
@@ -222,11 +219,12 @@ body {
   z-index: 100;
   position: absolute;
   left: 74%;
-
 }
 
 .slider-text {
   display: flex;
+  width: 0;
+  overflow: hidden;
   flex-direction: column;
   margin-left: 74px;
 }
@@ -307,33 +305,122 @@ body {
 }
 
 .slider-img-animation {
-  width: 600px;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  bottom: 0%;
-  left: 50%;
   transform: translate(11%, 40%);
 }
 .slider-img-animation img {
   max-width: 100%;
 }
 
-.slider-img-animation .animation1.first {
+.animation1.first {
+  width: 630px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: -28%;
+  left: 52%;
   max-width: 100%;
-  z-index: 1000;
+  z-index: 1;
 }
 
-.slider-img-animation .animation2.first {
-  max-width: 100%;
-  z-index: 100;
+.animation2.first {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  z-index: -2;
   position: absolute;
-  bottom: -39%;
-  left: 48%;
+  bottom: -59%;
+  left: 79%;
+}
+
+.animation1.two {
+  width: 450px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 35%;
+  left: 54%;
+  max-width: 100%;
+  z-index: -1;
+}
+
+.animation2.two {
+  width: 550px;
+  display: flex;
+  align-items: center;
+  z-index: -2;
+  position: absolute;
+  bottom: 77%;
+  left: 76%;
+}
+
+.animation1.three {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 58%;
+  left: 67%;
+  max-width: 100%;
+  z-index: -1;
+}
+
+.animation2.three {
+  width: 550px;
+  display: flex;
+  align-items: center;
+  z-index: -2;
+  position: absolute;
+  bottom: 66%;
+  left: 73%;
 }
 
 .swiper-pagination {
   bottom: 2%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.swiper-slide-active .slider-text {
+  width: 100%;
+  transition: width 1.2s ease-in;
+  overflow: none;
+}
+
+.swiper-slide-active .slider-text.blue {
+  width: 100%;
+  transition: width 1.2s ease-in;
+  overflow: none;
+}
+
+.swiper-slide-active .animation1.first {
+  transition: all 0.6s ease-in;
+  bottom: -13%;
+  left: 54%;
+}
+
+.swiper-slide-active .animation2.first {
+  transition: all 0.6s ease-in;
+  bottom: -40%;
+  left: 62%;
+}
+
+.swiper-slide-active .animation1.two {
+  transition: all 0.6s ease-in;
+  bottom: 12%;
+}
+.swiper-slide-active .animation2.two {
+  transition: all 0.6s ease-in;
+  bottom: 43%;
+  left: 64%;
+}
+
+.swiper-slide-active .animation1.three {
+  transition: all 0.6s ease-in;
+  bottom: 21%;
+  left: 56%;
+}
+.swiper-slide-active .animation2.three {
+  transition: all 0.6s ease-in;
+  bottom: 41%;
+  left: 64%;
 }
