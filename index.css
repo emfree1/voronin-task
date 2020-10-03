@@ -11,6 +11,7 @@ body {
 .container {
   max-width: 100%;
   height: 100vh;
+  position: relative;
   overflow: hidden;
 }
 
@@ -19,7 +20,33 @@ body {
   height: 100%;
   display: flex;
   box-sizing: border-box;
+}
+
+.slider-text-container-box {
+  position: relative;
+  width: 100%;
+  height: 407px;
+  z-index: -2;
   overflow: hidden;
+}
+
+.slider-text-container.red {
+  background-color: #f24444;
+
+}
+
+.slider-text-container {
+  width: 60%;
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+  height: 405px;
+  z-index: 1;
+  background-color: #00cdde;
+}
+
+.slider-text-container.yellow {
+  background-color: #ffb208;
 }
 
 .slider-box {
@@ -45,8 +72,16 @@ body {
 
 .nav-menu {
   display: flex;
-  justify-content: space-between;
-  margin: 20px 20px 0 20px;
+    justify-content: space-between;
+    margin: 36px 20px 0 41px;
+    position: absolute;
+    width: 94%;
+    z-index: 2;
+}
+
+.block {
+  height: 58px;
+  width: 50%;
 }
 
 .gamburger {
@@ -100,7 +135,6 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 100;
-  background-color: #00cdde;
 }
 
 .red-point.first {
@@ -109,6 +143,10 @@ body {
 
 .red-point.last {
   right: -19px;
+}
+
+.red-point.three {
+  right: -6px;
 }
 
 .nav-menu-item ul li:hover .red-point {
@@ -223,8 +261,7 @@ body {
 
 .slider-text {
   display: flex;
-  width: 0;
-  overflow: hidden;
+  width: 100%;
   flex-direction: column;
   margin-left: 74px;
 }
@@ -316,7 +353,7 @@ body {
   display: flex;
   align-items: center;
   position: absolute;
-  bottom: -28%;
+  bottom: -58%;
   left: 52%;
   max-width: 100%;
   z-index: 1;
@@ -328,8 +365,8 @@ body {
   align-items: center;
   z-index: -2;
   position: absolute;
-  bottom: -59%;
-  left: 79%;
+  bottom: -92%;
+  left: 71%;
 }
 
 .animation1.two {
@@ -380,16 +417,9 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.swiper-slide-active .slider-text {
-  width: 100%;
-  transition: width 1.2s ease-in;
-  overflow: none;
-}
-
-.swiper-slide-active .slider-text.blue {
-  width: 100%;
-  transition: width 1.2s ease-in;
-  overflow: none;
+.swiper-slide-active .slider-text-container {
+  left: 60%;
+  transition: left 0.6s ease-in;
 }
 
 .swiper-slide-active .animation1.first {
