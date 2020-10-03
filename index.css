@@ -25,22 +25,21 @@ body {
 .slider-text-container-box {
   position: relative;
   width: 100%;
-  height: 407px;
   z-index: -2;
   overflow: hidden;
+  margin-top: 100px;
 }
 
 .slider-text-container.red {
   background-color: #f24444;
-
 }
 
 .slider-text-container {
   width: 60%;
+  height: 100%;
   position: absolute;
   left: 0;
   overflow: hidden;
-  height: 405px;
   z-index: 1;
   background-color: #00cdde;
 }
@@ -55,7 +54,7 @@ body {
   background-color: #00cdde;
   display: flex;
   box-sizing: border-box;
-  padding: 15px;
+  padding: 28px;
 }
 
 .slider {
@@ -72,21 +71,21 @@ body {
 
 .nav-menu {
   display: flex;
-    justify-content: space-between;
-    margin: 36px 20px 0 41px;
-    position: absolute;
-    width: 94%;
-    z-index: 2;
+  justify-content: space-between;
+  margin: 55px 0px 0 50px;
+  position: absolute;
+  width: 93.7%;
+  z-index: 2;
 }
 
-.block {
+/* .block {
   height: 58px;
   width: 50%;
-}
+} */
 
 .gamburger {
-  width: 36px;
-  height: 36px;
+  width: 52px;
+  height: 57px;
 }
 
 .gamburger img {
@@ -117,8 +116,8 @@ body {
   color: #ffffff;
   text-decoration: none;
   font-family: system-ui;
-  font-size: 11px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 300;
   letter-spacing: 0.42px;
   line-height: 10.1px;
   padding: 10px 15px 10px 15px;
@@ -165,16 +164,16 @@ body {
   text-transform: uppercase;
   /* padding: 10px 15px 10px 15px; */
   font-family: "Source Code Pro - Regular";
-  font-weight: 600;
+  font-weight: 700;
   border: 3px solid #ffffff;
   transition: border, 0.4s ease-in-out;
 }
 
 .next-block {
   position: absolute;
-  bottom: -5%;
+  bottom: -15px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
   width: 45px;
   height: 25px;
   display: flex;
@@ -199,9 +198,9 @@ body {
 .slider h1 {
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
-  font-size: 55px;
+  font-size: 128px;
   font-weight: 900;
-  line-height: 58px;
+  line-height: 115px;
   margin-bottom: 9px;
 }
 
@@ -263,7 +262,7 @@ body {
   display: flex;
   width: 100%;
   flex-direction: column;
-  margin-left: 74px;
+  margin-left: 115px;
 }
 .line-block.blue {
   background-color: #0044fb;
@@ -282,18 +281,18 @@ body {
 }
 
 .line-block {
-  width: 40px;
-  height: 4px;
+  width: 86px;
+  height: 9px;
   background-color: #f24444;
+  margin-top: 7px;
 }
 
 .save-all {
   color: #ffffff;
-  font-family: "Montserrat - Bold";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 26px 0;
 }
 
 .save-all.blue span {
@@ -312,7 +311,7 @@ body {
 
 .container-link {
   border: 1px solid #ffffff;
-  width: 160px;
+  width: 191px;
   height: 61px;
   box-sizing: border-box;
   display: flex;
@@ -325,7 +324,7 @@ body {
 
 .container-link p {
   color: #ffffff;
-  font-size: 10px;
+  font-size: 16px;
   font-family: system-ui;
   padding-left: 5px;
   font-weight: 300;
@@ -334,81 +333,60 @@ body {
 }
 
 .container-link p span {
-  font-size: 12px;
-  font-family: "Montserrat sans-serif";
+  font-size: 17px;
+  font-family: system-ui;
   font-weight: bold;
   letter-spacing: 0.42px;
   line-height: 15.1px;
 }
 
-.slider-img-animation {
-  transform: translate(11%, 40%);
-}
 .slider-img-animation img {
   max-width: 100%;
 }
 
 .animation1.first {
-  width: 630px;
-  display: flex;
-  align-items: center;
   position: absolute;
-  bottom: -58%;
-  left: 52%;
+  bottom: -342px;
+  left: 49.5%;
   max-width: 100%;
   z-index: 1;
 }
 
 .animation2.first {
-  width: 600px;
-  display: flex;
-  align-items: center;
   z-index: -2;
   position: absolute;
-  bottom: -92%;
-  left: 71%;
+  bottom: -700px;
+  left: 69%;
 }
 
 .animation1.two {
-  width: 450px;
-  display: flex;
-  align-items: center;
   position: absolute;
-  bottom: 35%;
-  left: 54%;
+  top: -480px;
+  left: 55%;
   max-width: 100%;
   z-index: -1;
 }
 
 .animation2.two {
-  width: 550px;
-  display: flex;
-  align-items: center;
   z-index: -2;
   position: absolute;
-  bottom: 77%;
   left: 76%;
+  top: -590px;
 }
 
 .animation1.three {
-  width: 400px;
-  display: flex;
-  align-items: center;
   position: absolute;
-  bottom: 58%;
-  left: 67%;
+  left: 74%;
+  top: -503px;
   max-width: 100%;
   z-index: -1;
 }
 
 .animation2.three {
-  width: 550px;
-  display: flex;
-  align-items: center;
   z-index: -2;
   position: absolute;
-  bottom: 66%;
-  left: 73%;
+  left: 79%;
+  top: -619px;
 }
 
 .swiper-pagination {
@@ -424,33 +402,34 @@ body {
 
 .swiper-slide-active .animation1.first {
   transition: all 0.6s ease-in;
-  bottom: -13%;
-  left: 54%;
+  bottom: -50px;
+  left: 49.5%;
 }
 
 .swiper-slide-active .animation2.first {
   transition: all 0.6s ease-in;
-  bottom: -40%;
-  left: 62%;
+  bottom: -232px;
+  left: 59%;
 }
 
 .swiper-slide-active .animation1.two {
   transition: all 0.6s ease-in;
-  bottom: 12%;
+  top: -180px;
+  left: 55%;
 }
 .swiper-slide-active .animation2.two {
   transition: all 0.6s ease-in;
-  bottom: 43%;
-  left: 64%;
+  left: 66%;
+  top: -218px;
 }
 
 .swiper-slide-active .animation1.three {
   transition: all 0.6s ease-in;
-  bottom: 21%;
-  left: 56%;
+  left: 62%;
+    top: -67px;
 }
 .swiper-slide-active .animation2.three {
   transition: all 0.6s ease-in;
-  bottom: 41%;
-  left: 64%;
-}
+  left: 69%;
+    top: -231px;
+}  
