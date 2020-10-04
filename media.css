@@ -1,0 +1,146 @@
+@media only screen and (max-width: 1942px) {
+}
+
+@media only screen and (max-width: 1800px) {
+  .slider-text-container-box.blue {
+    margin-top: 210px;
+  }
+  .slider-text-container-box {
+    margin-top: 198px;
+  }
+
+  .slider h1 {
+    font-size: 80px;
+    line-height: 77px;
+  }
+
+  .line-block {
+    width: 55px;
+    height: 7px;
+  }
+
+  .save-all {
+    font-size: 18px;
+    margin: 24px 0;
+  }
+
+  .container-link p {
+    font-size: 14px;
+  }
+
+  .container-link p span {
+    font-size: 16px;
+  }
+
+  .animation1.first {
+    width: 850px;
+    bottom: -293px;
+    left: 49.5%;
+  }
+
+  .animation2.first {
+    width: 750px;
+    bottom: -559px;
+    left: 73%;
+  }
+
+  .animation1.two {
+    width: 640px;
+    top: -405px;
+    left: 51%;
+  }
+
+  .animation2.two {
+    top: -487px;
+  }
+
+  .swiper-slide-active .animation1.two {
+    transition: all 0.6s ease-in;
+    top: -180px;
+    left: 55%;
+  }
+
+  .swiper-slide-active .animation2.two {
+    transition: all 0.6s ease-in;
+    left: 66%;
+    top: -300px;
+  }
+
+  .animation1.three {
+    width: 600px;
+    left: 73%;
+    top: -458px;
+  }
+
+  .animation2.three {
+    width: 800px;
+    left: 79%;
+    top: -545px;
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+  .slider-text-container-box {
+    margin-top: 120px;
+  }
+
+  .slider-text-container-box.blue {
+    margin-top: 180px;
+  }
+
+  .slider-text h1 {
+    font-size: 60px;
+    line-height: 59px;
+  }
+
+  .line-block {
+    width: 39px;
+    height: 4px;
+  }
+
+  .save-all {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 21px 0;
+  }
+
+  .container-link p {
+    font-size: 13px;
+  }
+
+  .container-link p span {
+    font-size: 15px;
+  }
+
+  .animation1.three {
+    width: 500px;
+    left: 69%;
+    top: -384px;
+  }
+  .animation2.three {
+    width: 700px;
+    left: 77%;
+    top: -484px;
+  }
+
+  .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 65px;
+    left: 48.3%;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .slider-text-container-box {
+    margin-top: 250px;
+  }
+
+
+  .slider-text-container-box.blue {
+    margin-top: 250px;
+  }
+
+  .nav-menu{ 
+    width: 92%;
+  }
+}
